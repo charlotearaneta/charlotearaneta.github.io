@@ -1,0 +1,130 @@
+/* style.css - All custom CSS for the portfolio */
+
+/* ===== BASE STYLES ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background-color: rgba(180, 83, 9, 0.2);
+    color: #1f2937;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-waving-hand {
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ===== COMPONENT STYLES ===== */
+.gradient-line {
+    height: 4px;
+    background: linear-gradient(90deg, #b45309, #f59e0b);
+    width: 60px;
+    border-radius: 2px;
+}
+
+.section-header {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.section-header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 70%;
+    background: linear-gradient(to bottom, #b45309, #f59e0b);
+    border-radius: 3px;
+}
+
+/* ===== TRANSITIONS ===== */
+.transition-all-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== SHADOWS ===== */
+.card-shadow {
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0 20px 40px -20px rgba(180, 83, 9, 0.15);
+}
+
+/* ===== BACKGROUND PATTERNS ===== */
+.hero-pattern {
+    background-image: radial-gradient(#b45309 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    opacity: 0.05;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .section-header {
+        padding-left: 1rem;
+    }
+    
+    .section-header::before {
+        width: 4px;
+    }
+}
