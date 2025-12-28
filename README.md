@@ -2,7 +2,7 @@
 
 ### 🚀 HR → Tech | Automation, AI & Digital Transformation  
 
-I’m an **Automation Specialist and No-Code Automation Consultant** with experience building automation and workflow solutions **since 2021**.
+I’m an **Automation Specialist and No-Code Automation Consultant** with experience building automation and workflow solutions. 
 
 I design **end-to-end automations, AI-enabled workflows, and cloud-based systems** across HR, operations, productivity, and internal tools—focused on reducing manual work, improving clarity, and helping teams work smarter not harder.
 
@@ -68,21 +68,19 @@ Projects, case studies, and documentation of my tech and automation journey.
 
 
 ### **Programming Languages**  
-HTML • CSS • JavaScript (Beginner) • Python (Beginner)  
+HTML • CSS • JavaScript • Python 
 
 ### **Automation & Workflow Tools**  
 No-Code Development (Zapier, Make, n8n) • APIs • JSON • Automation Logic • Webhooks  
 
 ### **AI & Productivity Tools**  
-Prompt Engineering • ChatGPT • Claude • Perplexity  
-Google Workspace AI • Microsoft 365 • Notion • ClickUp  
+Prompt Engineering • ChatGPT • Claude • Perplexity • Deepseek • Google Gemini • Google Workspace AI • Microsoft 365 • Notion • ClickUp  
 
 ### **Tech & Cloud**  
-Git & GitHub • Linux • Windows OS • Basic Networking  
-AWS Fundamentals • Cloud Support Essentials  
+Git & GitHub • Linux • Windows OS • AWS Fundamentals • Cloud Support Essentials  
 
 ### **Professional Tools**  
-Google Workspace • Excel • Notion • ClickUp (Admin + Expert)  
+Google Workspace • Notion • ClickUp (Admin + Expert) • Asana
 
 
 ---
@@ -92,17 +90,9 @@ Google Workspace • Excel • Notion • ClickUp (Admin + Expert)
 - Google IT Support Professional Certificate  
 - AWS Cloud Support Associate  
 - ClickUp Admin Certification  
-- ClickUp Expert Certification  
+- ClickUp Expert Certification
+- Notion Academy: Advanced
 - McKinsey Forward Program Graduate  
-
----
-
-## 🌱 Currently Learning  
-
-- AWS & Azure cloud technologies  
-- Python automation scripts  
-- AI integrations for HR-Tech  
-- Systems analysis & digital transformation  
 
 ---
 
