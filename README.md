@@ -2,7 +2,7 @@
 
 ### 🚀 HR → Tech | Automation, AI, Systems & Digital Transformation  
 
-I’m an **Automation Specialist and No-Code Automation Consultant** with experience building automation and workflow solutions. 
+I’m an **Automation Specialist** with experience building automation and workflow solutions. 
 
 I design **end-to-end automations, AI-enabled workflows, and cloud-based systems** across HR, operations, productivity, and internal tools focused on reducing manual work, improving clarity, and helping teams work smarter not harder.
 
