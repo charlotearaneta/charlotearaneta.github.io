@@ -1,6 +1,6 @@
 # 👋 Hi, I’m Charlotte Araneta  
 
-### 🚀 HR → Tech | Automation, AI & Digital Transformation  
+### 🚀 HR → Tech | Automation, AI, Systems & Digital Transformation  
 
 I’m an **Automation Specialist and No-Code Automation Consultant** with experience building automation and workflow solutions. 
 
