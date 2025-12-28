@@ -1,4 +1,4 @@
-# 👋 Hi, I’m Charlotte Araneta  
+# 👋 Hi, I’m Charlote Araneta  
 
 ### 🚀 HR → Tech | Automation, AI, Systems & Digital Transformation  
 
