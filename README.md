@@ -96,7 +96,7 @@ Google Workspace • Notion • ClickUp (Admin + Expert) • Asana
 
 ---
 
-## 📫 Connect With Me  
+## 📫 Let's Connect  
 
 👩‍💻 Created by: **Charlote Araneta**
 
