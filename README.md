@@ -2,9 +2,9 @@
 
 ### 🚀 HR → Tech | Automation, AI, Systems & Digital Transformation  
 
-I’m an **Automation Specialist** with experience building automation and workflow solutions. 
+I’m an **Automation & AI Workflow Expert** specializing in designing intelligent systems that reduce manual work and improve operational clarity.
 
-I design **end-to-end automations, AI-enabled workflows, and cloud-based systems** across HR, operations, productivity, and internal tools focused on reducing manual work, improving clarity, and helping teams work smarter not harder.
+I create end-to-end automations, AI-powered workflows, and cloud based systems across HR, operations, and productivity—helping teams save time, reduce errors, and scale with confidence.
 
 ---
 
