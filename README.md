@@ -105,8 +105,10 @@ Google Workspace • Notion • ClickUp (Admin + Expert) • Asana
 🌐 Portfolio: https://charlotearaneta.github.io
 
 
-✨ Always learning. Always building. Focused on impact.
 
 
 ---
+
+✨ Always learning. Always building. Focused on impact.
+
 
