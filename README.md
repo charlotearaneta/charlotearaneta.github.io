@@ -4,7 +4,7 @@
 
 I’m an **Automation Specialist and No-Code Automation Consultant** with experience building automation and workflow solutions. 
 
-I design **end-to-end automations, AI-enabled workflows, and cloud-based systems** across HR, operations, productivity, and internal tools—focused on reducing manual work, improving clarity, and helping teams work smarter not harder.
+I design **end-to-end automations, AI-enabled workflows, and cloud-based systems** across HR, operations, productivity, and internal tools focused on reducing manual work, improving clarity, and helping teams work smarter not harder.
 
 ---
 
