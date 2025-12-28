@@ -16,7 +16,7 @@ While my professional background is in **Human Resources and Marketing Managemen
 
 I consider myself a **generalist by design** comfortable working across domains, tools, and problem spaces. I focus on understanding how systems interact, then building practical automations that are maintainable, scalable, and human-centered.
 
-Today, I work at the intersection of **automation, AI, cloud fundamentals, and digital transformation**, translating real-world needs into functional systems.
+Today, I work at the intersection of **automation, AI, cloud fundamentals, and digital transformation**, translating real world needs into functional systems.
 
 ---
 
