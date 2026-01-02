@@ -48,7 +48,7 @@ Today, I work at the intersection of **automation, AI, cloud fundamentals, and d
 
 ---
 
-## 🚀 Featured Projects  
+## 🚀 Projects  
 
 ### 🗣️ Ayra Talk (APT) — Assistive Communication (AAC)  
 An assistive communication tool for non-verbal individuals using intuitive, AI-enhanced interfaces.  
