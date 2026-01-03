@@ -50,11 +50,11 @@ Today, I work at the intersection of **automation, AI, cloud fundamentals, and d
 
 ## 🚀 Projects  
 
-### 🗣️ Ayra Talk (APT) — Assistive Communication (AAC)  
+### 🗣️ Ayra Talk — Assistive Communication (AAC)  
 An assistive communication tool for non-verbal individuals using intuitive, AI-enhanced interfaces.  
 🔗 https://ayratalk.com  
 
-### 🧠 SolaceMind — AI Emotional Support Platform  
+### 🧠 Solace Mind — AI Emotional Support Platform  
 Compassion-driven AI designed to support mental wellness and emotional reflection.  
 🔗 https://solacemind.github.io  
 
