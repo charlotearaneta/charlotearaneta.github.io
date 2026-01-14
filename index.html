@@ -3,747 +3,1083 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlote Araneta | Scaling Businesses with Tech & AI</title>
+    <title>Charlote Araneta | Custom Business Automation & Tool Development</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Custom business automation and tool development. I build workflows, dashboards, and portals that save 15-20 hours per week. Fast delivery, affordable pricing, professional results.">
     
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-light': '#faf7f2',
-                        'secondary-light': '#ffffff',
-                        'primary-text': '#1f2937',
-                        'accent-caramel': '#b45309',
-                        'accent-light': '#fef3c7',
-                    }
-                }
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: #1f2937;
+            background-color: #faf7f2;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+
+        /* Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #fef3c7;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 0;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #1f2937;
+        }
+
+        .logo:hover {
+            color: #b45309;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #b45309;
+            font-weight: 600;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: linear-gradient(to right, rgba(180, 83, 9, 0.05), rgba(245, 158, 11, 0.05));
+            padding: 1.5rem 0;
+            border: 1px solid #fef3c7;
+            border-radius: 1rem;
+            margin: 2rem 0 3rem 0;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #b45309;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4b5563;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 3rem 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 3rem 0 0 0;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #b45309, #d97706);
+            color: white;
+            box-shadow: 0 10px 15px rgba(180, 83, 9, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px rgba(180, 83, 9, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #b45309;
+            border: 2px solid #b45309;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-icon {
+            margin-left: 0.5rem;
+            transition: transform 0.3s;
+        }
+
+        .btn-primary:hover .btn-icon {
+            transform: translateX(4px);
+        }
+
+        .btn-secondary:hover .btn-icon {
+            transform: translateX(4px);
+        }
+
+        /* Specialization Grid */
+        .specialization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 0 0 4rem 0;
+        }
+
+        .specialization-item {
+            background-color: white;
+            border: 1px solid #fef3c7;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .specialization-item:hover {
+            border-color: #b45309;
+            color: #b45309;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Profile Section */
+        .profile-section {
+            padding: 4rem 0;
+            background-color: white;
+            border-radius: 1rem;
+            margin-top: 2rem;
+        }
+
+        .profile-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .approach-list {
+            margin: 2rem 0;
+        }
+
+        .approach-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .approach-number {
+            background-color: #b45309;
+            color: white;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .approach-text {
+            padding-top: 0.25rem;
+        }
+
+        /* Tools Section */
+        .tools-section {
+            margin: 3rem 0;
+            padding: 3rem 0;
+            border-top: 1px solid #fef3c7;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .tool-item {
+            background-color: white;
+            border: 1px solid #fef3c7;
+            border-radius: 0.75rem;
+            padding: 1.5rem 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .tool-item:hover {
+            border-color: #b45309;
+            color: #b45309;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: #b45309;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        .project-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .automation-category {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        .tool-category {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .project-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-tool {
+            background-color: #f3f4f6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        /* Who This Is For Section */
+        .fit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fit-card {
+            border-radius: 1rem;
+            padding: 2.5rem;
+        }
+
+        .perfect-fit {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+        }
+
+        .not-fit {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+        }
+
+        .fit-list {
+            list-style: none;
+        }
+
+        .fit-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .fit-icon {
+            margin-right: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .check-icon {
+            color: #16a34a;
+        }
+
+        .x-icon {
+            color: #dc2626;
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid #fef3c7;
+        }
+
+        .testimonial-quote {
+            font-size: 1.5rem;
+            color: #f59e0b;
+            margin-bottom: 1rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(to bottom right, #fef3c7, white);
+            border-radius: 1.5rem;
+            padding: 4rem;
+            text-align: center;
+            margin: 4rem 0;
+            border: 1px solid #fef3c7;
+        }
+
+        .cta-features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .cta-feature {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid #fef3c7;
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cta-icon {
+            color: #b45309;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #fef3c7;
+            padding: 3rem 0;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        .footer-links a:hover {
+            color: #b45309;
+        }
+
+        /* Utility Classes */
+        .text-accent {
+            color: #b45309;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+        .mt-4 { margin-top: 2rem; }
+        .mt-8 { margin-top: 4rem; }
+
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mb-8 { margin-bottom: 4rem; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .specialization-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .profile-section {
+                padding: 2rem;
+            }
+            
+            .approach-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .approach-number {
+                margin-bottom: 0.5rem;
             }
         }
-    </script>
+
+        @media (max-width: 480px) {
+            .specialization-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .service-card, .project-card, .fit-card {
+                padding: 1.5rem;
+            }
+            
+            .cta-section {
+                padding: 2rem;
+            }
+            
+            .profile-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body class="bg-primary-light text-primary-text min-h-screen antialiased">
-
-    <header class="sticky top-0 z-50 bg-primary-light/95 backdrop-blur-sm border-b border-amber-100">
-        <nav class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <!-- Removed CA icon from header -->
-            <a href="#hero" class="text-xl font-bold tracking-tight text-primary-text hover:text-accent-caramel transition-all-smooth">
-                CHARLOTE ARANETA
-            </a>
-
-            <div class="flex space-x-8 text-sm font-medium">
-                <a href="#about" class="text-gray-600 hover:text-accent-caramel transition-all-smooth hover:font-semibold">Profile</a>
-                <a href="#what-i-do" class="text-gray-600 hover:text-accent-caramel transition-all-smooth hover:font-semibold">What I Do</a>
-                <a href="#projects" class="text-gray-600 hover:text-accent-caramel transition-all-smooth hover:font-semibold">Projects</a>
-                <a href="#who-this-is-for" class="text-gray-600 hover:text-accent-caramel transition-all-smooth hover:font-semibold">Who This Is For</a>
-                <a href="#resources" class="text-gray-600 hover:text-accent-caramel transition-all-smooth hover:font-semibold">Free Resources</a>
-                <a href="#contact" class="text-gray-600 hover:text-accent-caramel transition-all-smooth hover:font-semibold">Contact</a>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#hero" class="logo">CHARLOTE ARANETA</a>
+            <div class="nav-links">
+                <a href="#hero">HOME</a>
+                <a href="#services">SERVICES</a>
+                <a href="#projects">EXAMPLES</a>
+                <a href="#who-this-is-for">WHO THIS IS FOR</a>
+                <a href="#contact">FREE SESSION</a>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-12 md:py-20">
-        <!-- HERO SECTION - UPDATED -->
-        <section id="hero" class="mb-24 pt-8 md:pt-16 fade-in-up">
-            <div class="relative">
-                <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 hero-pattern rounded-full"></div>
-                
-                <div class="relative mb-10">
-                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                        I Save Growing Teams 15-20 Hours Per Week Through Intelligent Automation
-                    </h1>
-                    <div class="gradient-line mb-8"></div>
-                </div>
-                
-                <div class="relative max-w-3xl">
-                    <p class="text-2xl sm:text-3xl text-gray-700 mb-8 leading-relaxed">
-                        Stop losing time to repetitive tasks. I design automated workflows that handle the grunt work while you focus on growth.
-                    </p>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>I Build Custom Business Solutions That Save You 20+ Hours Per Week</h1>
+                    <p>Stop wasting time on repetitive tasks and clunky software that doesn't fit your needs. I create complete solutions from automated workflows to custom web apps built exactly for your business, without the cost of traditional development.</p>
                     
-                    <!-- Hero Tags -->
-                    <div class="mb-10">
-                        <p class="text-gray-700 font-semibold mb-4 text-lg">Specializing in:</p>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="px-5 py-2.5 bg-white border border-amber-200 text-gray-700 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-accent-caramel hover:text-accent-caramel transition-all-smooth">Zapier</span>
-                            <span class="px-5 py-2.5 bg-white border border-amber-200 text-gray-700 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-accent-caramel hover:text-accent-caramel transition-all-smooth">Make</span>
-                            <span class="px-5 py-2.5 bg-white border border-amber-200 text-gray-700 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-accent-caramel hover:text-accent-caramel transition-all-smooth">n8n</span>
-                            <span class="px-5 py-2.5 bg-white border border-amber-200 text-gray-700 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-accent-caramel hover:text-accent-caramel transition-all-smooth">ClickUp</span>
-                            <span class="px-5 py-2.5 bg-white border border-amber-200 text-gray-700 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-accent-caramel hover:text-accent-caramel transition-all-smooth">Notion</span>
-                            <span class="px-5 py-2.5 bg-white border border-amber-200 text-gray-700 rounded-xl text-sm font-medium shadow-sm hover:shadow-md hover:border-accent-caramel hover:text-accent-caramel transition-all-smooth">AI Integration</span>
+                    <!-- Stats Bar -->
+                    <div class="stats-bar">
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number">15-20</div>
+                                <div class="stat-label">Hours Saved/Week</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2-4</div>
+                                <div class="stat-label">Weeks Delivery</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">ROI in</div>
+                                <div class="stat-label">30 Days</div>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Hero CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-5 mt-12">
-                        <a href="#what-i-do" class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-accent-caramel to-amber-600 text-white font-bold rounded-full text-lg shadow-xl hover:shadow-2xl transition-all-smooth transform hover:scale-105 group">
-                            <span>See How I Can Help You</span>
-                            <svg class="w-5 h-5 ml-3 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
+                    <!-- Specialization Grid -->
+                    <div class="specialization-grid">
+                        <div class="specialization-item">Workflow Automation</div>
+                        <div class="specialization-item">Custom Dashboards</div>
+                        <div class="specialization-item">Business Tools</div>
+                        <div class="specialization-item">AI Integration</div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn-primary">
+                            See What I Can Build
+                            <span class="btn-icon">→</span>
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-accent-caramel text-accent-caramel font-bold rounded-full text-lg shadow-lg hover:shadow-xl transition-all-smooth transform hover:scale-105 group">
-                            <span>Book a Free Automation Audit</span>
-                            <svg class="w-5 h-5 ml-3 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
+                        <a href="#contact" class="btn-secondary">
+                            Book Free Strategy Session
+                            <span class="btn-icon">→</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PROFILE SECTION - UPDATED -->
-        <section id="about" class="mb-28 fade-in-up" style="animation-delay: 0.1s">
-            <h2 class="section-header text-3xl font-bold mb-12 text-primary-text uppercase tracking-wider">
-                Why Businesses Hire Me
-            </h2>
-            
-            <div class="bg-gradient-to-br from-white to-amber-50 p-10 rounded-2xl card-shadow border border-amber-100 hover:border-accent-caramel/30 transition-all-smooth">
-                <div class="space-y-7 text-gray-700 text-lg leading-relaxed">
-                    <p class="text-2xl font-bold text-gray-800 mb-6">
-                        I'm Charlote Araneta, and I solve the problem of "too much to do, not enough people."
-                    </p>
-                    
-                    <p>
-                        Over the past <strong class="text-accent-caramel font-bold">[X years/months]</strong>, I've helped <strong class="text-accent-caramel font-bold">[X] teams</strong> eliminate thousands of hours of manual work by engineering automation workflows that actually work—no technical team required.
-                    </p>
-                    
-                    <div class="bg-white/80 p-8 rounded-xl border border-amber-100 mt-8">
-                        <h3 class="text-xl font-bold text-primary-text mb-6">My approach is simple:</h3>
-                        <ol class="space-y-6 pl-5">
-                            <li class="flex items-start">
-                                <span class="bg-accent-caramel text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</span>
-                                <span><strong class="text-gray-800">I identify</strong> your most time-consuming repetitive tasks</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="bg-accent-caramel text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</span>
-                                <span><strong class="text-gray-800">I design automation systems</strong> using proven platforms (Zapier, Make, n8n, ClickUp, Notion)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="bg-accent-caramel text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">3</span>
-                                <span><strong class="text-gray-800">You get back 15-20 hours per week</strong> to focus on growth, not grunt work</span>
-                            </li>
-                        </ol>
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <div class="container">
+                <div class="profile-section">
+                    <div class="profile-content">
+                        <h2 class="section-header">Why Businesses Hire Me</h2>
+                        
+                        <p class="mb-3">I'm Charlote Araneta, and I solve the problem of "too much to do, not enough people."</p>
+                        <p class="mb-4">I specialize in building automated workflows and custom business tools that eliminate repetitive work—no technical team required, no 6-month timelines, no enterprise prices.</p>
+                        
+                        <h3 class="mt-4 mb-3">My approach is simple:</h3>
+                        <div class="approach-list">
+                            <div class="approach-item">
+                                <div class="approach-number">1</div>
+                                <div class="approach-text">
+                                    <strong>I identify</strong> your most time-consuming repetitive tasks
+                                </div>
+                            </div>
+                            <div class="approach-item">
+                                <div class="approach-number">2</div>
+                                <div class="approach-text">
+                                    <strong>I design automation systems</strong> using proven platforms (Zapier, Make, n8n, ClickUp, Notion)
+                                </div>
+                            </div>
+                            <div class="approach-item">
+                                <div class="approach-number">3</div>
+                                <div class="approach-text">
+                                    <strong>You get back 15-20 hours per week</strong> to focus on growth, not grunt work
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 mb-4">When automation isn't enough, I build custom tools (dashboards, portals, calculators) that do exactly what you need, delivered in weeks, not months.</p>
                     </div>
-                    
-                    <p class="text-xl text-gray-800 mt-8">
-                        I don't just set up tools—I architect entire workflow ecosystems that scale with you.
-                    </p>
-                    
-                    <div class="mt-10 pt-8 border-t border-amber-200">
-                        <h3 class="text-xl font-bold text-primary-text mb-6">Who I work best with:</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <span class="text-accent-caramel mr-3 font-bold text-lg">•</span>
-                                    <span class="text-gray-700">Startup founders drowning in operations</span>
-                                </div>
-                                <div class="flex items-start">
-                                    <span class="text-accent-caramel mr-3 font-bold text-lg">•</span>
-                                    <span class="text-gray-700">Teams of 5-25 people scaling quickly</span>
-                                </div>
-                            </div>
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <span class="text-accent-caramel mr-3 font-bold text-lg">•</span>
-                                    <span class="text-gray-700">Service businesses with repetitive client workflows</span>
-                                </div>
-                                <div class="flex items-start">
-                                    <span class="text-accent-caramel mr-3 font-bold text-lg">•</span>
-                                    <span class="text-gray-700">Anyone who's ever said "I wish this was automatic"</span>
-                                </div>
-                            </div>
+                </div>
+
+                <!-- Tools Section -->
+                <div class="tools-section">
+                    <h3 class="text-center mb-2">Trusted Tools & Platforms</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">Zapier</div>
+                        <div class="tool-item">Make</div>
+                        <div class="tool-item">n8n</div>
+                        <div class="tool-item">ClickUp</div>
+                        <div class="tool-item">Notion</div>
+                        <div class="tool-item">Lovable</div>
+                        <div class="tool-item">Replit</div>
+                        <div class="tool-item">AI Tools</div>
+                    </div>
+                    <p class="text-center">Fast, reliable solutions using industry-leading platforms</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-header">How I Help Your Business Run Smoother</h2>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Workflow Automation That Actually Saves Time</h3>
+                        <p>I connect your tools so they work together automatically. No more copy-paste, no more "I forgot to follow up," no more wasting hours on repetitive tasks.</p>
+                        
+                        <h4 class="mt-3">What I build:</h4>
+                        <ul class="service-features">
+                            <li>End-to-end process automation (lead capture → CRM → follow-up → invoicing)</li>
+                            <li>Cross-platform integrations (your tools talk to each other automatically)</li>
+                            <li>Smart workflows with conditional logic (not just simple triggers)</li>
+                            <li>API and webhook connections for custom solutions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Custom Business Tools (When Off-The-Shelf Software Isn't Enough)</h3>
+                        <p>Sometimes automation isn't enough—you need a tool built specifically for your business. I build custom web apps, dashboards, and portals using modern platforms.</p>
+                        
+                        <h4 class="mt-3">What I build:</h4>
+                        <ul class="service-features">
+                            <li>Client portals with real-time updates</li>
+                            <li>Custom calculators and configurators</li>
+                            <li>Internal dashboards and reporting tools</li>
+                            <li>Booking and scheduling systems</li>
+                            <li>Team collaboration tools</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Complete Business Systems (Automation + Custom Tools)</h3>
+                        <p>Most businesses need both: automation to eliminate busy work AND custom tools to solve unique problems. I design end-to-end systems that combine both seamlessly.</p>
+                        
+                        <h4 class="mt-3">What I build:</h4>
+                        <ul class="service-features">
+                            <li>End-to-end client management systems</li>
+                            <li>Custom CRM with automated workflows</li>
+                            <li>Lead generation and qualification systems</li>
+                            <li>Project management + invoicing + reporting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>AI Integration for Real Business Problems</h3>
+                        <p>I integrate AI where it makes financial sense—typically saving 10-30 hours per month per use case. No AI for AI's sake, just practical applications that improve your bottom line.</p>
+                        
+                        <h4 class="mt-3">What I build:</h4>
+                        <ul class="service-features">
+                            <li>AI-powered support ticket routing and responses</li>
+                            <li>Automated content summarization and analysis</li>
+                            <li>Smart lead qualification and scoring</li>
+                            <li>Intelligent data processing and insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-header">Projects & Solutions</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <span class="project-category automation-category">Automation</span>
+                        <h3>Client Onboarding Automation</h3>
+                        <p><strong>Problem:</strong> Manual onboarding taking 3+ hours per client</p>
+                        <p><strong>Solution:</strong> Multi-step automation from signup → CRM → task creation → welcome sequence</p>
+                        <p><strong>Result:</strong> Reduced to 15 minutes of manual work per client</p>
+                        <div class="project-tools">
+                            <span class="project-tool">Make</span>
+                            <span class="project-tool">ClickUp</span>
+                            <span class="project-tool">Gmail</span>
+                            <span class="project-tool">Stripe</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <span class="project-category automation-category">Automation</span>
+                        <h3>Lead Management System</h3>
+                        <p><strong>Problem:</strong> Leads falling through cracks, no follow-up tracking</p>
+                        <p><strong>Solution:</strong> Lead capture → qualification → automated nurture sequence → CRM sync</p>
+                        <p><strong>Result:</strong> 90% reduction in lost leads, 12 hours/week saved</p>
+                        <div class="project-tools">
+                            <span class="project-tool">Zapier</span>
+                            <span class="project-tool">HubSpot</span>
+                            <span class="project-tool">Slack</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <span class="project-category tool-category">Custom Tool</span>
+                        <h3>Client Status Portal</h3>
+                        <p><strong>Problem:</strong> Constant "what's the status?" emails eating up team time</p>
+                        <p><strong>Solution:</strong> Real-time client portal showing project status, deliverables, messages</p>
+                        <p><strong>Result:</strong> 80% reduction in status update emails, better client satisfaction</p>
+                        <div class="project-tools">
+                            <span class="project-tool">Modern web app platform</span>
+                            <span class="project-tool">Make.com integrations</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <span class="project-category tool-category">Custom Tool</span>
+                        <h3>Custom Service Calculator</h3>
+                        <p><strong>Problem:</strong> Sales team spending hours creating custom quotes</p>
+                        <p><strong>Solution:</strong> Interactive calculator that generates instant quotes based on client needs</p>
+                        <p><strong>Result:</strong> Quote generation time reduced from 2 hours to 5 minutes</p>
+                        <div class="project-tools">
+                            <span class="project-tool">No-code platform</span>
+                            <span class="project-tool">Custom logic</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <span class="project-category tool-category">Custom Tool</span>
+                        <h3>Internal Operations Dashboard</h3>
+                        <p><strong>Problem:</strong> Team manually pulling data from 5 different tools for weekly reports</p>
+                        <p><strong>Solution:</strong> Real-time dashboard aggregating data from all sources automatically</p>
+                        <p><strong>Result:</strong> Eliminated 8 hours/week of manual reporting</p>
+                        <div class="project-tools">
+                            <span class="project-tool">Custom dashboard</span>
+                            <span class="project-tool">API integrations</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- WHAT I DO SECTION - UPDATED -->
-        <section id="what-i-do" class="mb-28 fade-in-up" style="animation-delay: 0.2s">
-            <h2 class="section-header text-3xl font-bold mb-14 text-primary-text uppercase tracking-wider">
-                How I Help You Scale Without Adding Headcount
-            </h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/50 transition-all-smooth transform hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-gradient-to-br from-amber-100 to-amber-50 rounded-xl flex items-center justify-center mb-7 group-hover:from-amber-200 group-hover:to-amber-100 transition-all-smooth">
-                        <span class="text-3xl">⚡</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-primary-text mb-5">Workflow Automation That Actually Saves Time</h3>
-                    <p class="text-gray-600 mb-6">
-                        I don't build "set it and forget it" automations that break in a week. I engineer robust systems that handle your busywork 24/7.
-                    </p>
-                    
-                    <div class="bg-amber-50/50 p-5 rounded-lg mb-6">
-                        <h4 class="font-bold text-accent-caramel mb-3">Recent client results:</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Reduced client onboarding from 3 hours to 15 minutes for a consulting firm</span>
+        <!-- Who This Is For Section -->
+        <section id="who-this-is-for" class="section">
+            <div class="container">
+                <h2 class="section-header">Is This Right For Your Business?</h2>
+                
+                <div class="fit-grid">
+                    <!-- Perfect Fit -->
+                    <div class="fit-card perfect-fit">
+                        <h3 class="mb-3">✅ You're a perfect fit if:</h3>
+                        <ul class="fit-list">
+                            <li>
+                                <span class="fit-icon check-icon">✓</span>
+                                <span>Your team spends hours on copy-paste work every week</span>
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Eliminated 12 hours/week of data entry for a 7-person sales team</span>
+                            <li>
+                                <span class="fit-icon check-icon">✓</span>
+                                <span>You're scaling but can't afford to hire yet</span>
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Automated invoice tracking that saved an agency $8K in late payments</span>
+                            <li>
+                                <span class="fit-icon check-icon">✓</span>
+                                <span>You've tried automation tools but couldn't make them work</span>
+                            </li>
+                            <li>
+                                <span class="fit-icon check-icon">✓</span>
+                                <span>You have 5-50 employees and growth is straining your processes</span>
+                            </li>
+                            <li>
+                                <span class="fit-icon check-icon">✓</span>
+                                <span>You're losing leads, missing deadlines, or drowning in admin work</span>
                             </li>
                         </ul>
                     </div>
-                    
-                    <h4 class="font-bold text-gray-800 mb-3">What I build:</h4>
-                    <ul class="space-y-3.5 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>End-to-end process automation (lead capture → CRM → follow-up → invoicing)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Cross-platform integrations (your tools talk to each other automatically)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Smart workflows with conditional logic (not just simple triggers)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>API and webhook connections for custom solutions</span>
-                        </li>
-                    </ul>
-                </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/50 transition-all-smooth transform hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-gradient-to-br from-amber-100 to-amber-50 rounded-xl flex items-center justify-center mb-7 group-hover:from-amber-200 group-hover:to-amber-100 transition-all-smooth">
-                        <span class="text-3xl">📊</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-primary-text mb-5">Work Management Systems That Scale</h3>
-                    <p class="text-gray-600 mb-6">
-                        Your team shouldn't have to "figure out the system." I design ClickUp, Notion, and Asana workspaces that make sense from day one.
-                    </p>
-                    
-                    <div class="bg-amber-50/50 p-5 rounded-lg mb-6">
-                        <h4 class="font-bold text-accent-caramel mb-3">Recent client results:</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Cut project planning time from 3 hours to 20 minutes with custom ClickUp templates</span>
+                    <!-- Not Fit -->
+                    <div class="fit-card not-fit">
+                        <h3 class="mb-3">❌ This probably isn't for you if:</h3>
+                        <ul class="fit-list">
+                            <li>
+                                <span class="fit-icon x-icon">✗</span>
+                                <span>You're looking for a cheap Fiverr-style quick fix</span>
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Designed a Notion system that reduced "where is that file?" messages by 80%</span>
+                            <li>
+                                <span class="fit-icon x-icon">✗</span>
+                                <span>You have a massive enterprise with complex compliance needs</span>
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Built automated reporting that eliminated 5 hours/week of manual status updates</span>
+                            <li>
+                                <span class="fit-icon x-icon">✗</span>
+                                <span>You want someone to just "click buttons" without strategy</span>
+                            </li>
+                            <li>
+                                <span class="fit-icon x-icon">✗</span>
+                                <span>You're not ready to invest in systems that scale your business</span>
                             </li>
                         </ul>
                     </div>
-                    
-                    <h4 class="font-bold text-gray-800 mb-3">What I build:</h4>
-                    <ul class="space-y-3.5 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Complete workspace architecture (not just random boards)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Automated task creation, assignments, and notifications</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Documentation systems people actually use</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Team SOPs that live inside your workflow tools</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/50 transition-all-smooth transform hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-gradient-to-br from-amber-100 to-amber-50 rounded-xl flex items-center justify-center mb-7 group-hover:from-amber-200 group-hover:to-amber-100 transition-all-smooth">
-                        <span class="text-3xl">🤖</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-primary-text mb-5">AI Integration for Real Business Problems</h3>
-                    <p class="text-gray-600 mb-6">
-                        I don't add AI for the sake of AI. I integrate it where it makes financial sense—typically saving 10-30 hours per month per use case.
-                    </p>
-                    
-                    <div class="bg-amber-50/50 p-5 rounded-lg mb-6">
-                        <h4 class="font-bold text-accent-caramel mb-3">Recent client results:</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>AI-powered support ticket routing that reduced response time by 60%</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Automated content summarization saving 8 hours/week for a marketing team</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-accent-caramel mr-2 font-bold">✓</span>
-                                <span>Smart lead qualification system that improved conversion rates by 23%</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <h4 class="font-bold text-gray-800 mb-3">What I build:</h4>
-                    <ul class="space-y-3.5 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>AI-assisted customer support workflows</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Automated content generation and analysis</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Intelligent data processing and summarization</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent-caramel mr-3 font-bold">•</span>
-                            <span>Custom AI tools integrated into your existing stack</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- RECENT AUTOMATION PROJECTS SECTION -->
-        <section id="projects" class="mb-28 fade-in-up" style="animation-delay: 0.3s">
-            <h2 class="section-header text-3xl font-bold mb-14 text-primary-text uppercase tracking-wider">
-                Recent Automation Projects
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1: E-Commerce Workflow -->
-                <div class="bg-white p-10 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/50 transition-all-smooth transform hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-green-50 rounded-xl flex items-center justify-center mb-7 group-hover:from-green-200 group-hover:to-green-100 transition-all-smooth">
-                        <span class="text-3xl">🛒</span>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold text-primary-text mb-6">E-Commerce Workflow Automation</h3>
-                    
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2">Challenge:</h4>
-                            <p class="text-gray-700 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                Manual order processing requiring 8+ hours of weekly admin work
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2">Solution:</h4>
-                            <p class="text-gray-700 bg-green-50/50 p-4 rounded-lg border border-green-200">
-                                Automated Shopify → Make → ClickUp workflow for seamless order management
-                            </p>
-                        </div>
-                        
-                        <div class="bg-amber-50/80 p-5 rounded-xl border border-amber-200">
-                            <h4 class="font-bold text-accent-caramel mb-2">Result:</h4>
-                            <p class="text-2xl font-bold text-accent-caramel">8 hours saved per week</p>
-                            <p class="text-gray-600 text-sm mt-2">Automated order tracking, customer notifications, and inventory updates</p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-3">Tools Used:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-4 py-2 bg-white border border-green-200 text-green-700 rounded-lg text-sm font-medium shadow-sm">Make</span>
-                                <span class="px-4 py-2 bg-white border border-amber-200 text-amber-700 rounded-lg text-sm font-medium shadow-sm">ClickUp</span>
-                                <span class="px-4 py-2 bg-white border border-blue-200 text-blue-700 rounded-lg text-sm font-medium shadow-sm">Shopify</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Content Publishing -->
-                <div class="bg-white p-10 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/50 transition-all-smooth transform hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center mb-7 group-hover:from-blue-200 group-hover:to-blue-100 transition-all-smooth">
-                        <span class="text-3xl">📝</span>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold text-primary-text mb-6">Content Publishing System</h3>
-                    
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2">Challenge:</h4>
-                            <p class="text-gray-700 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                Publishing blog posts across 3 platforms manually each week
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-2">Solution:</h4>
-                            <p class="text-gray-700 bg-blue-50/50 p-4 rounded-lg border border-blue-200">
-                                Notion → Zapier → WordPress/Medium/LinkedIn automated publishing pipeline
-                            </p>
-                        </div>
-                        
-                        <div class="bg-amber-50/80 p-5 rounded-xl border border-amber-200">
-                            <h4 class="font-bold text-accent-caramel mb-2">Result:</h4>
-                            <p class="text-2xl font-bold text-accent-caramel">5 hours saved per week</p>
-                            <p class="text-gray-600 text-sm mt-2">Consistent multi-platform publishing with one-click scheduling</p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold text-gray-800 mb-3">Tools Used:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-4 py-2 bg-white border border-blue-200 text-blue-700 rounded-lg text-sm font-medium shadow-sm">Zapier</span>
-                                <span class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-lg text-sm font-medium shadow-sm">Notion</span>
-                                <span class="px-4 py-2 bg-white border border-green-200 text-green-700 rounded-lg text-sm font-medium shadow-sm">WordPress</span>
-                                <span class="px-4 py-2 bg-white border border-yellow-200 text-yellow-700 rounded-lg text-sm font-medium shadow-sm">Medium</span>
-                                <span class="px-4 py-2 bg-white border border-blue-200 text-blue-700 rounded-lg text-sm font-medium shadow-sm">LinkedIn</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- NEW: FREE RESOURCES SECTION -->
-        <section id="resources" class="mb-28 fade-in-up" style="animation-delay: 0.35s">
-            <h2 class="section-header text-3xl font-bold mb-14 text-primary-text uppercase tracking-wider">
-                Free Automation Resources
-            </h2>
-            
-            <div class="bg-gradient-to-br from-white to-amber-50/50 p-10 rounded-2xl card-shadow border border-amber-100">
-                <div class="max-w-3xl mx-auto text-center">
-                    <p class="text-2xl text-gray-700 mb-10 leading-relaxed">
-                        Download these templates I use with clients to get started with automation today:
-                    </p>
-                    
-                    <!-- Resource Cards -->
-                    <div class="grid md:grid-cols-3 gap-6 mb-12">
-                        <!-- Resource 1 -->
-                        <div class="bg-white p-8 rounded-2xl border border-amber-200 hover:border-accent-caramel/50 transition-all-smooth group">
-                            <div class="w-16 h-16 bg-gradient-to-br from-amber-100 to-amber-50 rounded-xl flex items-center justify-center mb-5 mx-auto group-hover:from-amber-200 group-hover:to-amber-100 transition-all-smooth">
-                                <span class="text-3xl">📥</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary-text mb-4">ClickUp Project Template for Service Businesses</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                Pre-built project structure with automations for client work management
-                            </p>
-                            <div class="inline-flex items-center text-accent-caramel font-medium text-sm">
-                                <span>Download Template</span>
-                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- Resource 2 -->
-                        <div class="bg-white p-8 rounded-2xl border border-amber-200 hover:border-accent-caramel/50 transition-all-smooth group">
-                            <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-green-50 rounded-xl flex items-center justify-center mb-5 mx-auto group-hover:from-green-200 group-hover:to-green-100 transition-all-smooth">
-                                <span class="text-3xl">📥</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary-text mb-4">Make.com Workflow: Auto-Invoice from Project Completion</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                Automated invoicing system that triggers when projects are marked complete
-                            </p>
-                            <div class="inline-flex items-center text-accent-caramel font-medium text-sm">
-                                <span>Download Workflow</span>
-                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- Resource 3 -->
-                        <div class="bg-white p-8 rounded-2xl border border-amber-200 hover:border-accent-caramel/50 transition-all-smooth group">
-                            <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center mb-5 mx-auto group-hover:from-blue-200 group-hover:to-blue-100 transition-all-smooth">
-                                <span class="text-3xl">📥</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary-text mb-4">Notion Client Dashboard Template</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                All-in-one client management dashboard with automated status tracking
-                            </p>
-                            <div class="inline-flex items-center text-accent-caramel font-medium text-sm">
-                                <span>Download Template</span>
-                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Email Form -->
-                    <div class="max-w-lg mx-auto">
-                        <div class="bg-white p-8 rounded-2xl border border-amber-200 shadow-lg">
-                            <h3 class="text-2xl font-bold text-primary-text mb-6">Get All Templates Delivered</h3>
-                            <p class="text-gray-600 mb-6">
-                                Enter your email to receive all three templates instantly:
-                            </p>
-                            
-                            <form class="space-y-4">
-                                <div>
-                                    <input type="email" 
-                                           placeholder="Your work email" 
-                                           class="w-full px-6 py-4 border-2 border-gray-300 rounded-full text-gray-700 focus:outline-none focus:border-accent-caramel transition-all-smooth text-lg">
-                                </div>
-                                <button type="submit" 
-                                        class="w-full px-8 py-4 bg-gradient-to-r from-accent-caramel to-amber-600 text-white font-bold rounded-full text-lg shadow-xl hover:shadow-2xl transition-all-smooth transform hover:scale-105">
-                                    Get All Templates Now
-                                </button>
-                            </form>
-                            
-                            <p class="text-xs text-gray-500 mt-6">
-                                No spam. Unsubscribe anytime. By downloading, you agree to receive occasional automation tips.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- NEW SECTION: WHO THIS IS FOR -->
-        <section id="who-this-is-for" class="mb-28 fade-in-up" style="animation-delay: 0.4s">
-            <h2 class="section-header text-3xl font-bold mb-14 text-primary-text uppercase tracking-wider">
-                Is This Right For Your Business?
-            </h2>
-            
-            <div class="grid md:grid-cols-2 gap-10">
-                <!-- Perfect Fit Column -->
-                <div class="bg-gradient-to-br from-emerald-50 to-white p-10 rounded-2xl card-shadow border border-emerald-100">
-                    <div class="flex items-center mb-8">
-                        <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mr-5">
-                            <span class="text-3xl">✅</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-800">You're a perfect fit if:</h3>
-                    </div>
-                    
-                    <ul class="space-y-5">
-                        <li class="flex items-start">
-                            <span class="text-emerald-600 mr-3 font-bold text-xl">✓</span>
-                            <span class="text-gray-700">Your team spends hours on copy-paste work every week</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-600 mr-3 font-bold text-xl">✓</span>
-                            <span class="text-gray-700">You're scaling but can't afford to hire yet</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-600 mr-3 font-bold text-xl">✓</span>
-                            <span class="text-gray-700">You've tried automation tools but couldn't make them work</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-600 mr-3 font-bold text-xl">✓</span>
-                            <span class="text-gray-700">You have 5-50 employees and growth is straining your processes</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-emerald-600 mr-3 font-bold text-xl">✓</span>
-                            <span class="text-gray-700">You're losing leads, missing deadlines, or drowning in admin work</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Not For You Column -->
-                <div class="bg-gradient-to-br from-rose-50/50 to-white p-10 rounded-2xl card-shadow border border-rose-100">
-                    <div class="flex items-center mb-8">
-                        <div class="w-14 h-14 bg-rose-100 rounded-xl flex items-center justify-center mr-5">
-                            <span class="text-3xl">❌</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-800">This probably isn't for you if:</h3>
-                    </div>
-                    
-                    <ul class="space-y-5">
-                        <li class="flex items-start">
-                            <span class="text-rose-500 mr-3 font-bold text-xl">✗</span>
-                            <span class="text-gray-700">You're looking for a cheap Fiverr-style quick fix</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-rose-500 mr-3 font-bold text-xl">✗</span>
-                            <span class="text-gray-700">You have a massive enterprise with complex compliance needs</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-rose-500 mr-3 font-bold text-xl">✗</span>
-                            <span class="text-gray-700">You want someone to just "click buttons" without strategy</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-rose-500 mr-3 font-bold text-xl">✗</span>
-                            <span class="text-gray-700">You're not ready to invest in systems that scale your business</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Engagement Details -->
-            <div class="mt-12 pt-10 border-t border-amber-200">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h4 class="text-2xl font-bold text-gray-800 mb-6">My typical engagement:</h4>
-                    <p class="text-xl text-gray-700 bg-white p-8 rounded-2xl border border-amber-200 shadow-lg">
-                        2-4 weeks to design, build, and implement automation systems that save 15-20 hours per week. 
-                        <span class="block text-accent-caramel font-bold mt-3">Most clients break even within the first month.</span>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIAL SECTION -->
-        <section id="testimonials" class="mb-28 fade-in-up" style="animation-delay: 0.45s">
-            <h2 class="section-header text-3xl font-bold mb-14 text-primary-text uppercase tracking-wider">
-                What Clients Say
-            </h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/30 transition-all-smooth">
-                    <div class="text-amber-400 text-3xl mb-5">"</div>
-                    <p class="text-gray-700 italic text-lg mb-6">
-                        Charlote saved us 15+ hours per week by automating our entire client onboarding process. What used to take us 3 hours per client now happens automatically. Best investment we made this year.
-                    </p>
-                    <div class="border-t border-gray-100 pt-6">
-                        <p class="font-bold text-gray-800">— [Client Name],</p>
-                        <p class="text-gray-600">[Title] at [Company]</p>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/30 transition-all-smooth">
-                    <div class="text-amber-400 text-3xl mb-5">"</div>
-                    <p class="text-gray-700 italic text-lg mb-6">
-                        We were drowning in manual data entry. Charlote built a system that eliminated 90% of it. Our team can finally focus on sales instead of spreadsheets.
-                    </p>
-                    <div class="border-t border-gray-100 pt-6">
-                        <p class="font-bold text-gray-800">— [Client Name],</p>
-                        <p class="text-gray-600">[Title] at [Company]</p>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-2xl card-shadow border border-gray-100 hover:border-accent-caramel/30 transition-all-smooth">
-                    <div class="text-amber-400 text-3xl mb-5">"</div>
-                    <p class="text-gray-700 italic text-lg mb-6">
-                        I thought automation was just for big companies. Charlote proved me wrong. The workflow she built paid for itself in the first month.
-                    </p>
-                    <div class="border-t border-gray-100 pt-6">
-                        <p class="font-bold text-gray-800">— [Client Name],</p>
-                        <p class="text-gray-600">[Title] at [Company]</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12 pt-10 border-t border-amber-200">
-                <a href="#contact" class="inline-flex items-center text-accent-caramel font-bold text-lg hover:text-amber-600 transition-all-smooth group">
-                    <span>Get results like these →</span>
-                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION - UPDATED -->
-        <section id="contact" class="mb-20 py-16 px-10 bg-gradient-to-br from-amber-50/80 to-white/80 backdrop-blur-sm rounded-3xl card-shadow border border-amber-100 text-center fade-in-up" style="animation-delay: 0.5s">
-            <div class="max-w-2xl mx-auto">
-                <!-- Changed heading to "Ready to Get Your Time Back?" -->
-                <h2 class="text-3xl font-bold mb-8 text-primary-text uppercase tracking-wider">
-                    Ready to Get Your Time Back?
-                </h2>
-                
-                <div class="gradient-line mx-auto mb-10"></div>
-                
-                <!-- Updated text content -->
-                <div class="space-y-6 text-gray-700 text-lg leading-relaxed mb-10">
-                    <p>
-                        I offer a free 30-minute Workflow Audit where I'll:
-                    </p>
-                    
-                    <div class="flex flex-col items-center space-y-4 mt-6">
-                        <div class="flex items-center bg-white/80 p-4 rounded-xl border border-amber-200 w-full max-w-md">
-                            <span class="text-accent-caramel font-bold text-xl mr-4">✓</span>
-                            <span>Identify your 3 biggest time-wasters</span>
-                        </div>
-                        <div class="flex items-center bg-white/80 p-4 rounded-xl border border-amber-200 w-full max-w-md">
-                            <span class="text-accent-caramel font-bold text-xl mr-4">✓</span>
-                            <span>Show you exactly how automation could help</span>
-                        </div>
-                        <div class="flex items-center bg-white/80 p-4 rounded-xl border border-amber-200 w-full max-w-md">
-                            <span class="text-accent-caramel font-bold text-xl mr-4">✓</span>
-                            <span>Give you a roadmap (even if you don't hire me)</span>
-                        </div>
-                    </div>
-                    
-                    <p class="text-xl font-medium text-gray-800 mt-8">
-                        No pressure, no sales pitch—just practical advice from someone who's solved this 100+ times.
-                    </p>
                 </div>
                 
-                <!-- Primary CTA: Book Your Free Audit -->
-                <div class="mb-12">
-                    <a href="https://calendar.app.google/dA8cHWMbtZEBsH6e8" 
-                       target="_blank" 
-                       class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-accent-caramel to-amber-600 text-white font-bold rounded-full text-lg shadow-xl hover:shadow-2xl transition-all-smooth transform hover:scale-105 group mx-auto">
-                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <span>Book Your Free Audit - Next Available: This Week →</span>
-                    </a>
+                <div class="text-center mt-8">
+                    <p><strong>My typical engagement:</strong> 2-4 weeks to design, build, and implement automation systems that save 15-20 hours per week. Most clients break even within the first month.</p>
                 </div>
+            </div>
+        </section>
 
-                <!-- LinkedIn link with updated text -->
-                <div class="mt-10 pt-10 border-t border-amber-200">
-                    <p class="text-gray-600 mb-6 text-lg">
-                        <strong>Not ready to talk?</strong> Connect with me on LinkedIn where I share automation strategies weekly.
-                    </p>
-                    <a href="https://www.linkedin.com/in/charlotearaneta/" 
-                       target="_blank" 
-                       class="inline-flex items-center text-accent-caramel font-bold hover:text-amber-600 transition-all-smooth text-lg group">
-                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        <span>Connect on LinkedIn →</span>
+        <!-- Testimonials Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-header">What Clients Say</h2>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="mb-3">"Charlote saved us 15+ hours per week by automating our entire client onboarding process. What used to take us 3 hours per client now happens automatically. Best investment we made this year."</p>
+                        <p><strong>— [Client Name],</strong></p>
+                        <p>[Title] at [Company]</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="mb-3">"We were drowning in manual data entry. Charlote built a system that eliminated 90% of it. Our team can finally focus on sales instead of spreadsheets."</p>
+                        <p><strong>— [Client Name],</strong></p>
+                        <p>[Title] at [Company]</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="mb-3">"I thought automation was just for big companies. Charlote proved me wrong. The workflow she built paid for itself in the first month."</p>
+                        <p><strong>— [Client Name],</strong></p>
+                        <p>[Title] at [Company]</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="#contact" class="btn-primary">
+                        Get results like these
+                        <span class="btn-icon">→</span>
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- CTA Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="cta-section">
+                    <h2 class="mb-4">Ready to Get Your Time Back?</h2>
+                    <p class="mb-4">I offer a free 30-minute Workflow Audit where I'll:</p>
+                    
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <span class="cta-icon">✓</span>
+                            Identify your 3 biggest time-wasters
+                        </div>
+                        <div class="cta-feature">
+                            <span class="cta-icon">✓</span>
+                            Show you exactly how automation could help
+                        </div>
+                    </div>
+                    
+                    <p class="mt-4 mb-4">No pressure, no sales pitch! Just practical advice from someone who's solved this 100+ times.</p>
+                    
+                    <a href="https://calendar.app.google/dA8cHWMbtZEBsH6e8" class="btn-primary">
+                        Book Your Free Audit - Next Available: This Week
+                        <span class="btn-icon">→</span>
+                    </a>
+                    
+                    <div class="mt-8">
+                        <p class="mb-3"><strong>Not ready to talk?</strong> Connect with me on LinkedIn where I share automation strategies weekly.</p>
+                        <a href="https://www.linkedin.com/in/charlotearaneta/" class="btn-secondary">
+                            Connect on LinkedIn
+                            <span class="btn-icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="text-center py-10 border-t border-amber-100 bg-white/50 mt-10">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-left">
-                    <p class="text-sm text-gray-600 font-medium mb-2">CHARLOTE ARANETA</p>
-                    <p class="text-xs text-gray-500">
-                        Automation & AI Workflow Expert
-                    </p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p class="mb-1"><strong>CHARLOTE ARANETA</strong></p>
+                    <p>Custom Business Automation & Tool Development</p>
                 </div>
                 
-                <div class="flex items-center space-x-6">
-                    <a href="#hero" class="text-xs text-gray-500 hover:text-accent-caramel transition-all-smooth">Back to Top</a>
-                    <span class="text-gray-300">•</span>
-                    <a href="#who-this-is-for" class="text-xs text-gray-500 hover:text-accent-caramel transition-all-smooth">Who This Is For</a>
-                    <span class="text-gray-300">•</span>
-                    <a href="#resources" class="text-xs text-gray-500 hover:text-accent-caramel transition-all-smooth">Free Resources</a>
-                    <span class="text-gray-300">•</span>
-                    <a href="#contact" class="text-xs text-gray-500 hover:text-accent-caramel transition-all-smooth">Free Audit</a>
+                <div class="footer-links">
+                    <a href="#hero">Back to Top</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Examples</a>
+                    <a href="#who-this-is-for">Who This Is For</a>
+                    <a href="#contact">Free Session</a>
                 </div>
             </div>
             
-            <div class="mt-8 pt-6 border-t border-gray-100">
-                <p class="text-xs text-gray-500">
-                    © 2026 Charlote Araneta. All work and content featured are original unless otherwise noted.
-                </p>
+            <div class="text-center mt-8">
+                <p>© 2024 Charlote Araneta. All work and content featured are original unless otherwise noted.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
 </body>
 </html>
