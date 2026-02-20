@@ -26,7 +26,7 @@ Today, I work at the intersection of **automation, AI, cloud fundamentals, and 
 ### ⚙️ Automation & Systems Engineering  
 - Design and deploy automations using **Zapier, Make, n8n**
 - Integrate **APIs, webhooks, JSON, and conditional logic** to eliminate manual tasks
-- Create cross-platform integrations connecting **ClickUp, Notion, Asana, Google Workspace, and Microsoft 365**  
+- Create cross-platform integrations connecting **ClickUp, Notion, and Google Workspace**  
 - Automate **operational, project management, and HR processes**  
 - Reduce manual workload through logic-based automation  
 
