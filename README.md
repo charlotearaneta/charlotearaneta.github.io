@@ -98,11 +98,3 @@ Git & GitHub • Linux • Windows OS • AWS Fundamentals • Cloud Support Ess
 ---
 
 ✨ Always learning. Always building. Focused on impact.
-
-
-
----
-
-✨ Always learning. Always building. Focused on impact.
-
-
