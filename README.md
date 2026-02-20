@@ -48,14 +48,17 @@ Today, I work at the intersection of **automation, AI, cloud fundamentals, and 
 
 ### 💼 Personal Portfolio  
 Projects, case studies, and documentation of my tech and automation journey.  
+
 🔗 https://charlotearaneta.github.io  
 
 ### 🗣️ Ayra Talk 
 Ayra Talk is a free AAC (Augmentative and Alternative Communication) app designed to give a voice to those who need it most.
+
 🔗 https://ayratalk.com  
 
 ### 💻 The Stack Exchange  
 Stack Exchange is the community-powered platform where professionals share real AI workflows, not marketing specs. Filter reviews by your exact role, steal battle-tested stacks with one click, and hire the experts who built them.
+
 🔗 https://thestackexchange.lovable.app
 
 ---
