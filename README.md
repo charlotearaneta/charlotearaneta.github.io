@@ -1,22 +1,22 @@
 # 👋 Hi, I’m Charlote Araneta  
 
-### 🚀 HR → Tech | Automation, AI, Systems & Digital Transformation  
+### 🚀 HR → Tech | Automation, AI, & Digital Transformation  
 
-I’m an **Automation & AI Workflow Expert** specializing in designing intelligent systems that reduce manual work and improve operational clarity.
+I’m an **Automation & AI Workflow Consultant** specializing in designing intelligent systems that reduce manual work and improve operational clarity.
 
-I create end-to-end automations, AI-powered workflows, and cloud based systems across HR, operations, and productivity—helping teams save time, reduce errors, and scale with confidence.
+I build end-to-end automations, AI-powered workflows, and locally hosted or cloud based systems across HR, marketing, operations, and productivity, helping teams save time, reduce errors, and scale with confidence.
 
 ---
 
 ## 👩‍💻 About Me  
 
-I began my automation journey in **2021**, initially experimenting with workflow tools to solve real operational problems. What started as curiosity quickly turned into consistent, hands-on work designing systems that connect tools, automate decisions, and eliminate repetitive tasks.
+I began my automation journey in **2021**, driven by a curiosity to solve real-world operational bottlenecks. What started as experimentation quickly evolved into a dedicated practice of designing systems that bridge tool gaps, automate complex decision making, and eliminate manual repetitive tasks.
 
-While my professional background is in **Human Resources and Marketing Management**, my automation work extends far beyond HR. Over the years, I’ve built and optimized workflows for **operations, project management, content systems, internal IT processes, and AI-powered tools**.
+While my professional background is in **Human Resources** which gives me a unique perspective on how people interact with systems as my expertise extends across the entire organizational map. Over the years, I have built and optimized workflows for **operations, project management, content lifecycles, and AI-integrated processes**. I don't just automate tasks; I architect systems that scale.
 
-I consider myself a **generalist by design** comfortable working across domains, tools, and problem spaces. I focus on understanding how systems interact, then building practical automations that are maintainable, scalable, and human-centered.
+I consider myself a **generalist by design** comfortable working across domains, tools, and problem spaces. I focus on understanding how systems interact, then building practical automations that are maintainable, scalable, and human-centered.
 
-Today, I work at the intersection of **automation, AI, cloud fundamentals, and digital transformation**, translating real world needs into functional systems.
+Today, I work at the intersection of **automation, AI, cloud fundamentals, and digital transformation**, translating real world needs into functional systems.
 
 ---
 
@@ -24,64 +24,55 @@ Today, I work at the intersection of **automation, AI, cloud fundamentals, and d
 ## 🛠️ What I Do  
 
 ### ⚙️ Automation & Systems Engineering  
-- Build no-code / low-code automations using **Zapier, Make, and n8n**  
-- Design multi-step workflows using **APIs, webhooks, and JSON**  
+- Design and deploy automations using **Zapier, Make, n8n**
+- Integrate **APIs, webhooks, JSON, and conditional logic** to eliminate manual tasks
 - Create cross-platform integrations connecting **ClickUp, Notion, Asana, Google Workspace, and Microsoft 365**  
-- Automate operational, project management, and HR processes  
+- Automate **operational, project management, and HR processes**  
 - Reduce manual workload through logic-based automation  
 
 ### 📊 Work Management & Productivity Systems  
-- Design and optimize **ClickUp, Notion, and Asana** workspaces  
+- Design and optimize **ClickUp and Notion** workspaces  
 - Build task, documentation, and reporting systems  
 - Implement automation for status updates, handoffs, and notifications  
 - Standardize workflows for teams and startups  
 
-### 🧠 AI-Enabled Workflows  
-- Integrate AI tools into productivity and operations systems  
-- Design prompt-driven workflows for support, content, and analysis  
-- Apply AI for decision support and knowledge management  
-
 ### 🧩 HR-Tech & Digital Transformation  
 - Automate recruitment and employee lifecycle processes  
-- Apply AI tools to HR, operations, and productivity  
+- Apply AI-powered tools for recruitment, employee management, and engagement
+- Transform traditional HR processes into automated, data-driven systems
 - Translate business and people needs into scalable systems  
 
 ---
 
 ## 🚀 Projects  
 
-### 🗣️ Ayra Talk — Assistive Communication (AAC)  
-An assistive communication tool for non-verbal individuals using intuitive, AI-enhanced interfaces.  
-🔗 https://ayratalk.com  
-
-### 🧠 Solace Mind — AI Emotional Support Platform  
-Compassion-driven AI designed to support mental wellness and emotional reflection.  
-🔗 https://solacemind.github.io  
-
 ### 💼 Personal Portfolio  
 Projects, case studies, and documentation of my tech and automation journey.  
 🔗 https://charlotearaneta.github.io  
+
+### 🗣️ Ayra Talk 
+Ayra Talk is a free AAC (Augmentative and Alternative Communication) app designed to give a voice to those who need it most.
+🔗 https://ayratalk.com  
+
+### 💻 The Stack Exchange  
+Stack Exchange is the community-powered platform where professionals share real AI workflows, not marketing specs. Filter reviews by your exact role, steal battle-tested stacks with one click, and hire the experts who built them.
+🔗 https://thestackexchange.lovable.app
 
 ---
 
 ## 🧰 Skills & Tools  
 
-
 ### **Programming Languages**  
 HTML • CSS • JavaScript • Python 
 
 ### **Automation & Workflow Tools**  
-No-Code Development (Zapier, Make, n8n) • APIs • JSON • Automation Logic • Webhooks  
+n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation Logic
 
 ### **AI & Productivity Tools**  
-Prompt Engineering • ChatGPT • Claude • Perplexity • Deepseek • Google Gemini • Google Workspace AI • Microsoft 365 • Notion • ClickUp  
+Prompt Engineering • ChatGPT • Claude • Perplexity • Deepseek • Kimi • Google Gemini • Google Workspace AI • Notion • ClickUp
 
 ### **Tech & Cloud**  
 Git & GitHub • Linux • Windows OS • AWS Fundamentals • Cloud Support Essentials  
-
-### **Professional Tools**  
-Google Workspace • Notion • ClickUp (Admin + Expert) • Asana
-
 
 ---
 
@@ -97,13 +88,13 @@ Google Workspace • Notion • ClickUp (Admin + Expert) • Asana
 ---
 
 ## 📫 Let's Connect  
-
-👩‍💻 Created by: **Charlote Araneta**
+🌐 Portfolio: https://charlotearaneta.github.io
 
 🔗 LinkedIn: https://www.linkedin.com/in/charlotearaneta
 
-🌐 Portfolio: https://charlotearaneta.github.io
+---
 
+✨ Always learning. Always building. Focused on impact.
 
 
 
