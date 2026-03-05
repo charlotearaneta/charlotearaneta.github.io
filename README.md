@@ -69,7 +69,7 @@ Stack Exchange is the community-powered platform where professionals share real 
 HTML • CSS • JavaScript • Python • Git & GitHub
 
 ### **Automation & Workflow Tools**  
-n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation Logic
+n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation Logic • AI Agent 
 
 ### **Tech & Infrastructure**
 Self-Hosted Infrastructure • VPS Management • Linux • Docker & Containerization • Cloud Support Essentials
