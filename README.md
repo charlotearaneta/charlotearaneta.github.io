@@ -65,17 +65,23 @@ Stack Exchange is the community-powered platform where professionals share real 
 
 ## 🧰 Skills & Tools  
 
-### **Programming Languages**  
-HTML • CSS • JavaScript • Python 
+### **Programming & Development**  
+HTML • CSS • JavaScript • Python • Git & GitHub
 
 ### **Automation & Workflow Tools**  
 n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation Logic
 
-### **AI & Productivity Tools**  
-Prompt Engineering • ChatGPT • Claude • Perplexity • Deepseek • Kimi • Google Gemini • Google Workspace AI • Notion • ClickUp
+### **Tech & Infrastructure**
+Self-Hosted Infrastructure • VPS Management • Linux • Docker & Containerization • Cloud Support Essentials
 
-### **Tech & Cloud**  
-Git & GitHub • Linux • Windows OS • AWS Fundamentals • Cloud Support Essentials  
+### **AI Platforms**  
+ChatGPT • Claude • Perplexity • Deepseek • Kimi • Google Gemini • Google Workspace AI • Notion • ClickUp
+
+### **AI & Machine Learning**
+Ollama • OpenClaw • Local LLM Deployment • n8n Self-Hosting • Prompt Engineering • AI Workflow Integration • Model Optimization
+
+### **Productivity & Project Management**
+ClickUp (Admin + Expert Certified) • Notion • Google Workspace • Microsoft 365
 
 ---
 
