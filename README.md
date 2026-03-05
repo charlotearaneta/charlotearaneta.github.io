@@ -75,7 +75,7 @@ n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation
 Self-Hosted Infrastructure • VPS Management • Linux • Docker & Containerization • Cloud Support Essentials
 
 ### **AI Platforms**  
-ChatGPT • Claude • Perplexity • Deepseek • Kimi • Google Gemini • Google Workspace AI • Notion • ClickUp
+ChatGPT • Claude • Perplexity • Deepseek • Kimi • Google Gemini • Google AI Studio • Notion • ClickUp
 
 ### **AI & Machine Learning**
 Ollama • OpenClaw • Local LLM Deployment • n8n Self-Hosting • Prompt Engineering • AI Workflow Integration • Model Optimization
