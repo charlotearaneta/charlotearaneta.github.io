@@ -12,7 +12,7 @@ I build end-to-end automations, AI-powered workflows, and locally hosted or clou
 
 I began my automation journey in **2021**, driven by a curiosity to solve real-world operational bottlenecks. What started as experimentation quickly evolved into a dedicated practice of designing systems that bridge tool gaps, automate complex decision making, and eliminate manual repetitive tasks.
 
-While my professional background is in **Human Resources** which gives me a unique perspective on how people interact with systems as my expertise extends across the entire organizational map. Over the years, I have built and optimized workflows for **operations, project management, content lifecycles, and AI-integrated processes**. I don't just automate tasks; I architect systems that scale.
+While my professional background is in **Human Resources** which gives me a unique perspective on how people interact with systems as my expertise extends across the entire organizational map. Over the years, I have built and optimized workflows for **operations, project management, marketing, content lifecycles, and AI-integrated processes**. I don't just automate tasks; I architect systems that scale.
 
 I consider myself a **generalist by design** comfortable working across domains, tools, and problem spaces. I focus on understanding how systems interact, then building practical automations that are maintainable, scalable, and human-centered.
 
