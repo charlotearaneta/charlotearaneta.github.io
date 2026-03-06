@@ -66,7 +66,7 @@ Stack Exchange is the community-powered platform where professionals share real 
 ## 🧰 Skills & Tools  
 
 ### **Programming & Development**  
-HTML • CSS • JavaScript • Python • Git & GitHub
+HTML • CSS • JavaScript  
 
 ### **Automation & Workflow Tools**  
 n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation Logic • AI Agent • Agentic Workflow
