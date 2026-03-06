@@ -71,14 +71,11 @@ HTML • CSS • JavaScript
 ### **Automation & Workflow Tools**  
 n8n • Zapier • Make • API Integration • Webhooks • JSON • Automation Logic • AI Agent • Agentic Workflow
 
-### **Tech & Infrastructure**
-Self-Hosted Infrastructure • VPS Management • Linux • Docker & Containerization • Cloud Support Essentials
+### **Agentic AI & Infrastructure**
+Autonomous AI agents • Agentic workflows using self-hosted n8n  • Local LLM deployment • Ollama • OpenClaw • VPS management • Docker 
 
 ### **AI Platforms**  
 ChatGPT • Claude • Perplexity • Deepseek • Kimi • Google Gemini • Google AI Studio 
-
-### **AI & Machine Learning**
-Ollama • OpenClaw • Local LLM Deployment • n8n Self-Hosting • Prompt Engineering • AI Workflow Integration • Model Optimization
 
 ### **Productivity & Project Management**
 ClickUp (Admin + Expert Certified) • Notion • Google Workspace • Microsoft 365
