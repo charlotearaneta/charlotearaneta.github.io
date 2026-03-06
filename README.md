@@ -65,7 +65,7 @@ Stack Exchange is the community-powered platform where professionals share real 
 
 ## 🧰 Skills & Tools  
 
-### **Programming & Development**  
+### **Programming Languages**  
 HTML • CSS • JavaScript  
 
 ### **Automation & Workflow Tools**  
